@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+
+/* Start of Header Section */
+.header ul {
+    margin: 1.5em 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.header ul li {
+    list-style-type: none;
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header ul .l2, .l3, .l4 {
+    text-align: right;
+}
+
+.header ul .l1 {
+    grid-column: 2 / span 1;
+}
+
+.header ul .l2 {
+    grid-column: 8 / span 1;
+}
+
+.header ul .l3 {
+    grid-column: 9 / span 1;
+}
+
+.header ul .l4 {
+    grid-column: 10 / span 1;
+}
+/* End of Header Section */
+
+
+/* Start of Main Section */
+main {
+    max-height: 80vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.left {
+    display: grid;
+    grid-column: 2 / span 4;
+    margin: auto 0;
+}
+
+.left img, h1, h3, h5, p {
+    margin: 0.4em 0;
+}
+
+.left .hello_icon {
+    width: 3em;
+}
+
+.left h3 {
+    font-family: "Product Sans";
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+.left h1 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 0.1em 0;
+}
+
+.left p {
+    font-family: "Product Sans";
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+}
+
+.left h5 {
+    font-family: "Product Sans";
+    font-weight: bold;
+    text-decoration: underline rgb(0, 112, 177) 2px;
+    font-size: 1em;
+}
+
+.right {
+    display: grid;
+    grid-column: 7 / 10;
+}
+/* End of Main Section */
+
+/* Start of Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    margin-top: 7em;
+}
+
+.services h5 {
+    grid-column: 2;
+    font-family: "Product Sans";
+    font-size: 1.5em;
+    color: rgb(0, 112, 177);
+}
+
+.services h2 {
+    grid-column: 2 / span 5;
+    grid-row: 2;
+    margin-top: 0;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+/* End of Services Section */
+
+
+/* start of media queries for responsiveness */
+
+    /* start of large tablet styles */
+@media screen and (max-width: 991px) {
+    
+    
+    }
+ 
+    /* start of medium tablet styles */
+@media screen and (max-width: 767px) {
+
+    
+    }
+   
+    /* start of phone styles */
+@media screen and (max-width: 479px) {
+
+    
+    }
